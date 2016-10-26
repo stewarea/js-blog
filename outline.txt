@@ -1,0 +1,17 @@
+model - post
+- title
+- author
+- image
+- body
+
+template -
+- application
+- index
+- post
+- contact
+- about
+
+components -
+- new-post
+- update-post
+- post-tile
