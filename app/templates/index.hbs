@@ -4,9 +4,6 @@
 
   <ul>
     {{#each model as |post|}}
-      {{post.title}} by {{post.author}}
-      <p><img src={{post.image}}></p>
-      {{post.body}}
-      <hr>
+      <li>{{post-tile post=post saveUpdatePost="saveUpdatePost" destroyPost="destroyPost"}}</li>
     {{/each}}
   </ul>

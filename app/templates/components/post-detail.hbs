@@ -1,0 +1,7 @@
+{{post.title}} by {{post.author}}
+<p><img src={{post.image}}></p>
+{{post.body}}
+<br>
+<button {{action 'delete' post}}>Delete Post</button>
+
+{{update-post post=post saveUpdatePost="saveUpdatePost"}}
