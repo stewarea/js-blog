@@ -1,9 +1,9 @@
-<h1>
-  The latest 
-</h1>
+<h1>The latest</h1>
 
-{{new-post}}
+  {{new-post}}
 
-<ul>
-{{post-tile}}
-</ul>
+  <ul>
+    {{#each model as |post|}
+  {{post-tile}}
+  {{/each}}
+  </ul>
