@@ -1,1 +1,19 @@
-{{yield}}
+{{#if addNewPost}}
+  <form class="form-control" >
+    <label for="title">Title</label>
+    {{input value=title id="title"}}
+
+    <label for="author">Author</label>
+    {{input value=author id="author"}}
+
+    <label for="image">Image URL</label>
+    {{input value=image id="image"}}
+
+    <label for="body">Body</label>
+    {{input value=body id="body"}}
+  </form>
+  <button {{action 'saveNewPost'}}>Create Post</button>
+
+{{else}}
+  <button {{action 'showForm'}}>New Post</button>
+{{/if}}

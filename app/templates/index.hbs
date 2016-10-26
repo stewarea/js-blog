@@ -1,9 +1,12 @@
 <h1>The latest</h1>
 
-  {{new-post}}
+  {{new-post saveNewPost="saveNewPost"}}
 
   <ul>
-    {{#each model as |post|}
-  {{post-tile}}
-  {{/each}}
+    {{#each model as |post|}}
+      {{post.title}} by {{post.author}}
+      <p><img src={{post.image}}></p>
+      {{post.body}}
+      <hr>
+    {{/each}}
   </ul>
