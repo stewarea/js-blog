@@ -1,0 +1,33 @@
+.jumbotron p {
+  font-size: 7em;
+  font-family: 'Nosifer', cursive;
+  color: orange;
+  text-align: center;
+
+}
+
+.jumbotron {
+    background-image: url("http://wallpapercave.com/wp/QljQ23w.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container {
+
+}
+
+body {
+  background-image: url("http://www.psdgraphics.com/file/hockey-ice-background.jpg");
+}
+
+.panel {
+  padding: 2%;
+  height: 300px;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5em;
+
+  }

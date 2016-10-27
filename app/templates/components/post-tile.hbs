@@ -1,6 +1,7 @@
-<li>
-    {{#link-to 'post' post.id}}{{post.title}} by {{post.author}}
-    {{/link-to}}
-    <p><img src={{post.image}}></p>
-    <hr>
-</li>
+<div class="panel panel-default" style="background-image: url('{{post.image}}')">
+
+      {{#link-to 'post' post.id}}{{post.title}} by {{post.author}}
+      {{/link-to}}
+
+
+</div>

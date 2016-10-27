@@ -4,6 +4,6 @@
 
   <ul>
     {{#each model.posts as |post|}}
-      <li>{{post-tile post=post saveUpdatePost="saveUpdatePost" destroyPost="destroyPost"}}</li>
+      {{post-tile post=post saveUpdatePost="saveUpdatePost" destroyPost="destroyPost"}}\
     {{/each}}
   </ul>
