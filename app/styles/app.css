@@ -4,6 +4,7 @@
   color: lightblue;
   text-align: center;
   text-shadow:  3px 3px 9px white;
+  text-decoration: none;
 
 }
 
@@ -25,7 +26,9 @@ body {
   background-size: cover;
   text-shadow:  3px 3px 9px black;
   text-align: center;
-
+  }
+  .detail {
+    background-color: dark gray:
   }
 
   .container-fluid {
@@ -74,9 +77,14 @@ body {
 
   .well {
     width: 100%;
+    margin-bottom: 5em;
+
   }
   .detail:hover {
     box-shadow: inset 1px 1px 2px 9px rgba(255, 26, 26, 0.5);
+  }
+  .detail {
+    background-color: lightgray;
   }
 
   .footer{
@@ -84,4 +92,12 @@ body {
     display: block;
     word-spacing: 50px;
   }
-  
+  .navbar {
+    margin-bottom: 8em;
+    background-color: black;
+    color: white;
+  }
+  .btn {
+    background-color: black;
+    color: lightgray;
+  }
