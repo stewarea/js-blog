@@ -1,0 +1,15 @@
+<h2>Add Comment</h2>
+<div>
+  <form class="form-group">
+    <div class="">
+      <label for="name"> Name </label>
+      {{input value=name id="name"}}
+    </div>
+    <div class="text-area">
+      <label for="text"> Text </label>
+      {{textarea value=text id="text"}}
+    </div>
+    <button {{action "saveComment"}}>Save Comment</button>
+  </form>
+
+</div>

@@ -3,7 +3,7 @@
   {{new-post saveNewPost="saveNewPost"}}
 
   <ul>
-    {{#each model as |post|}}
+    {{#each model.posts as |post|}}
       <li>{{post-tile post=post saveUpdatePost="saveUpdatePost" destroyPost="destroyPost"}}</li>
     {{/each}}
   </ul>
