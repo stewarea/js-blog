@@ -1,14 +1,20 @@
-{{post.title}} by {{post.author}}
-<p><img src={{post.image}}></p>
-{{post.body}}
-<br>
-<button {{action 'delete' post}}>Delete Post</button>
-{{update-post post=post saveUpdatePost="saveUpdatePost"}}
-<br />
+<div class="container" >
+  <div class="postdetail" style="background-image: url('{{post.image}}')">
+    <h1>{{post.title}} by {{post.author}}</h1>
+  </div>
+  <div class='well body'>
+    {{post.body}}
+  </div>
+  <br>
+  <button {{action 'delete' post}}>Delete Post</button>
+  {{update-post post=post saveUpdatePost="saveUpdatePost"}}
+  <br />
 
-<h2>Comments</h2>
-<ul>
-{{#each post.comments as |comment|}}
-  {{comment-tile comment=comment destroyComment="destroyComment"}}
-{{/each}}
-</ul>
+  <h2>Comments</h2>
+  <ul>
+  {{#each post.comments as |comment|}}
+    {{comment-tile comment=comment destroyComment="destroyComment"}}
+  {{/each}}
+  </ul>
+
+</div>

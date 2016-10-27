@@ -1,20 +1,17 @@
 .jumbotron p {
   font-size: 7em;
   font-family: 'Nosifer', cursive;
-  color: orange;
+  color: lightblue;
   text-align: center;
+  text-shadow:  3px 3px 9px white;
 
 }
 
 .jumbotron {
     background-image: url("http://wallpapercave.com/wp/QljQ23w.jpg");
-    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-
-}
-
-.container {
-
+    background-size: cover;
 }
 
 body {
@@ -22,12 +19,69 @@ body {
 }
 
 .panel {
-  padding: 2%;
   height: 300px;
-  max-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 5em;
+  text-shadow:  3px 3px 9px black;
+  text-align: center;
 
   }
+
+  .container-fluid {
+    max-width: 1200px;
+  }
+
+  .panel h1 {
+    color: #fff;
+      text-decoration: none;
+  }
+  .panel:hover {
+
+  }
+  .jumbotron:hover {
+
+  }
+
+.postdetail h1{
+  color: white;
+  text-shadow:  1px 1px 5px black;
+  font-size: 6em;
+  text-align: center;
+  align-items: center;
+  text-shadow:  1px 1px 8px black;
+
+}
+
+.postdetail {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  transition: 2s ease;
+}
+.ember-view {
+  transition: 2s ease;
+}
+
+.ember-view:hover {
+  text-decoration: none;
+
+}
+  .well h1{
+    font-size: 6em;
+  }
+
+  .well {
+    width: 100%;
+  }
+  .detail:hover {
+    box-shadow: inset 1px 1px 2px 9px rgba(255, 26, 26, 0.5);
+  }
+
+  .footer{
+    font-size: 2em;
+    display: block;
+    word-spacing: 50px;
+  }
+  

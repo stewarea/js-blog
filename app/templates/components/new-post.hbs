@@ -1,19 +1,19 @@
 {{#if addNewPost}}
-  <form class="form-control" >
-    <label for="title">Title</label>
+  <form class="form-group text-center" >
+    <label for="title">Title:</label>
     {{input value=title id="title"}}
 
-    <label for="author">Author</label>
+    <label for="author">Author:</label>
     {{input value=author id="author"}}
 
-    <label for="image">Image URL</label>
+    <label for="image">Image URL:</label>
     {{input value=image id="image"}}
 
-    <label for="body">Body</label>
-    {{input value=body id="body"}}
+    <label for="body">Body:</label>
+    {{textarea value=body id="body"}}
   </form>
-  <button {{action 'saveNewPost'}}>Create Post</button>
+  <button class="btn" {{action 'saveNewPost'}}>Create Post</button>
 
 {{else}}
-  <button {{action 'showForm'}}>New Post</button>
+  <button class="btn"{{action 'showForm'}}>New Post</button>
 {{/if}}
