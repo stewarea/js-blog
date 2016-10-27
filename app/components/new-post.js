@@ -12,6 +12,7 @@ export default Ember.Component.extend({
         author: this.get("author"),
         image: this.get("image"),
         body: this.get("body"),
+        comment: this.get("comments")
       };
       this.set('addNewPost', false);
       this.sendAction('saveNewPost', params);
